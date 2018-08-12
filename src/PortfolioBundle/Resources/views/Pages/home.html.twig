@@ -1,0 +1,610 @@
+{% extends "PortfolioBundle::Layout.html.twig" %}
+
+
+{% block pagecontent %}
+
+    <div class="preloader">
+        <div class="preloader-animation">
+            <div class="dot1"></div>
+            <div class="dot2"></div>
+        </div>
+    </div>
+
+    <div id="page" class="page">
+        <header id="site_header" class="header">
+            <div class="my-photo">
+                <img src="{{ asset('assets/images/my_photo.png') }}" alt="image">
+                <div class="mask"></div>
+            </div>
+
+            <div class="site-title-block">
+                <h1 class="site-title">Amal Hichri</h1>
+                <p class="site-description">Mobile Software Engineering student</p>
+            </div>
+
+            <a class="menu-toggle mobile-visible">
+                <i class="fa fa-bars"></i>
+            </a>
+        </header>
+        <div id="main" class="site-main">
+            <div class="pt-wrapper">
+                <div class="site-nav mobile-menu-hide">
+                    <ul id="nav" class="site-main-menu">
+                        <li>
+                            <a class="pt-trigger" href="#about_me" data-animation="58" data-goto="1">Tech in a Woman ?</a>
+                        </li>
+                        <li>
+                            <a class="pt-trigger" href="#resume" data-animation="59" data-goto="2">I am learning to thrive</a>
+                        </li>
+                        <li>
+                            <a class="pt-trigger" href="#portfolio" data-animation="60" data-goto="3">But am I thriving ?</a>
+                        </li>
+                        <li>
+                            <a class="pt-trigger" href="#blog" data-animation="61" data-goto="4">I code, and I write</a>
+                        </li>
+                        <li>
+                            <a class="pt-trigger" href="#contact" data-animation="58" data-goto="5">And we will rock !</a>
+                        </li>
+                    </ul>
+                    <ul class="social-links">
+                        <li><a  target="_blank" class="tip social-button" href="https://github.com/AmalH" title="Github"><i class="fa fa-github"></i></a></li>
+                        <li><a  target="_blank" class="tip social-button" href="https://stackoverflow.com/users/3183887/amal" title="Stack Overflow"><i class="fa fa-stack-overflow"></i></a></li>
+                        <li><a  target="_blank" class="tip social-button" href="https://www.linkedin.com/in/amalhichri/" title="Linkedin"><i class="fa fa-linkedin"></i></a></li> <!-- Full list of social icons: http://fontawesome.io/icons/#brand -->
+                    </ul>
+                </div>
+                <div class="subpages">
+                    <section class="pt-page pt-page-1" data-id="about_me">
+                        <div class="section-title-block">
+                            <h2 class="section-title">This is me . . .</h2>
+                            <h5 class="section-description">Artist, Thinker, Programmer.</h5>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 mobile-visible subpage-block">
+                                <div class="my-photo-small">
+                                    <img <img src="{{ asset('assets/images/my_photo.png') }}" alt="image">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 subpage-block">
+                                <div class="general-info">
+                                    <h3>Mobile software engineering student, and much more :)</h3>
+                                    <p style="text-align: justify">Still in Engineering school, yet I have been through enough internships and freelance work to make me assert that my self-learner attitude is key. I love problem solving as a skill and as "a nature", and I think one should adapt to whatever situation to solve whatever problem in hand, in the most efficient way.<br><br> That, requires real dedication. And I dont think one should dedicate himself to solving that in which he’s not interested.  </p>
+                                    <p style="text-align: justify">I, am interested in projects that involve creativity and innovation. Projects that would give one the cheers when they imagine or conceive them. Just like those in <a href="https://www.youtube.com/watch?v=BRUvbiWLwFI" target="blank_">here</a> !</p>
+                                    <p style="text-align: justify">The few coming pages of my website would make you discover what kind of Tech in a Woman I am, and help you contact me if, or when, needed.
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-6 subpage-block">
+                                <div class="block-title">
+                                    <h3>Testimonials</h3>
+                                </div>
+                                <div class="testimonials owl-carousel">
+
+                                    <div class="testimonial-item">
+                                        <div class="testimonial-content">
+                                            <div class="testimonial-text">
+                                                <p style="text-align: justify">"I had the pleasure of teaching Amal in her Engineering studies, I am certain that Amal is going to continue to do great and creative things in her future. I highly recommend her for any new job or internship program. She is talented, caring, intuitive, dedicated, and focused in her pursuits. She consistently seeks out constructive feedback so she can improve her skills."</p>
+                                            </div>
+                                        </div>        
+                                        <div class="testimonial-credits">
+                                            <div class="testimonial-picture">
+                                                <img src="{{ asset('assets/images/testimonials/reviewer1.jpg') }}" alt="">
+                                            </div>              
+                                            <div class="testimonial-author-info">
+                                                <a target="_blank" href="https://linkedin.com/in/houssemeddinelassoued/">
+                                                    <p class="testimonial-author">Houssem Eddine Lassoued</p>
+                                                    <p class="testimonial-firm">National Quantum</p>
+
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="pt-page pt-page-2" data-id="resume">
+                        <div class="section-title-block">
+                            <h2 class="section-title">6 years of learning</h2>
+                            <h4 class="section-description">and it's for life . . .</h4>
+
+                            <div style="margin-left: 600px;" class="download-cv-block">
+                                <a style="text-align: center" class="button" target="_blank" href="{{path('portfolio_cv')}}">Download my resume<br>It tells it better !</a>
+                            </div>  
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 col-md-6 subpage-block">
+                                <div class="block-title">
+                                    <h3>Certifications</h3> . 2015-2016 
+                                </div>
+                                <div class="timeline">
+                                    <div class="timeline-event te-primary">
+                                        <a target="_blank" href="https://www.youracclaim.com/badges/4ec38a45-f11a-467e-9d13-70378d540e97/public_url">
+
+                                            <div style="display: flex;
+                                                 align-items: center;">
+                                                <img src="{{ asset('assets/images/resume/mta_logo.jpg') }}" alt="">
+                                                <div style="padding-left: 10px;">
+                                                    <h4 class="event-name">Microsoft Technology Associate - MTA</h4>
+                                                    <span class="event-description">Software development fundamentals</span>
+                                                </div>
+
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="timeline-event te-primary">
+                                        <a target="_blank" href="https://www.youracclaim.com/badges/7e2bb0cd-5b69-4e1e-b268-eaf7f3e3bc97">
+                                            <div style="display: flex;
+                                                 align-items: center;">
+                                                <img src="{{ asset('assets/images/resume/mcp_logo.jpg') }}" alt="">
+                                                <div style="padding-left: 10px;">
+                                                    <h4 class="event-name">Microsoft Certified Professional - MCP</h4>
+                                                    <span class="event-description">Programming in HTML5 with JavaScript and CSS3</span>
+                                                </div>
+
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="timeline-event te-primary">
+                                        <a target="_blank" href="https://onedrive.live.com/?authkey=%21AKau27cq0F-2Klg&cid=1CC9CAAAE6E624D3&id=1CC9CAAAE6E624D3%2176522&parId=root&o=OneUp">
+
+                                            <div style="display: flex;
+                                                 align-items: center;">
+                                                <img src="{{ asset('assets/images/resume/ccna_logo.jpg') }}" alt="">
+                                                <div style="padding-left: 10px;">
+                                                    <h4 class="event-name">Cisco Certified Network Associate - CCNA level.1</h4>
+                                                    <span class="event-description">Introduction to networks</span>
+                                                </div>
+
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 subpage-block">
+                                <div class="block-title" >
+                                    <h3>Honors and Awards</h3> . 2014-2015
+                                </div>
+                                <div class="timeline">
+                                    <div class="timeline-event te-primary">
+                                        <div style="display: flex;
+                                             align-items: center;
+                                             padding-top: 10px;">
+                                            <img src="{{ asset('assets/images/resume/globalGameJam_logo.png') }}" alt="">
+                                            <div style="padding-left: 12px;">
+                                                <h4 class="event-name">Global Game Jam 2015</h4>
+                                                <span class="event-description">Best “Psychological experience” award</span>
+                                                <br>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-event te-primary">
+                                        <div style="display: flex;
+                                             align-items: center;">
+                                            <img src="{{ asset('assets/images/resume/microsoft_logo2.png') }}" alt="">
+                                            <div style="padding-left: 10px;">   
+                                                <h4 class="event-name">Microsoft student partner of the year</h4>
+                                                <span class="event-description">Best MSP in community for the year 2015</span>
+                                                <br>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-event te-primary">
+                                        <div style="display: flex;
+                                             align-items: center;">
+                                            <img src="{{ asset('assets/images/resume/acm_icpclogo.png') }}" alt="">
+                                            <div style="padding-left: 10px;">
+                                                <h4 class="event-name">National Collegiate Programming Contest 2014</h4>
+                                                <span class="event-description">Second place at Tunisian Collegiate Programming Contest</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="row">
+                            <div class="col-sm-6 col-md-4 subpage-block">
+                                <div class="block-title">
+                                    <h3>Education</h3> . 2012-2019
+                                </div>
+                                <div class="timeline">
+                                    <div class="timeline-event te-primary">
+                                        <h5 class="event-date">2015 - current</h5>
+                                        <h4 class="event-name">MSc in Mobile Information Systems</h4>
+                                        <span class="event-description"><a target="blank_" href="http://esprit.tn/les-accreditations-2/">Higher Private School of Engineering and Technology - ESPRIT</a></span>
+                                        <p>Engineer's degree in Software Engineering <strong>|</strong> Speciality: Mobile Information Systems.</p>
+                                    </div>
+                                    <div class="timeline-event te-primary">
+                                        <h5 class="event-date">2012 - 2015</h5>
+                                        <h4 class="event-name">BSc in Computer Science Fundamentals</h4>
+                                        <span class="event-description"><a href="http://www.isimm.rnu.tn/content/fr/24/Sciences-Informatiques.html" target="blank_">Higher Institute of Computer Science and Mathematics - ISIMM</a></span>
+                                        <p>Bachelor's degree in CS fundamentals <strong>|</strong> Intensive focus on algorithmics and maths.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-8 subpage-block">
+                                <div class="block-title">
+                                    <h3>Employment</h3> . 2014-2018
+                                </div>
+                                <div class="row">
+                                    <div class=" col-sm-6 col-md-6 timeline">
+                                        <div class="timeline-event te-primary">
+                                            <h5 class="event-date">Jan 2015 - Jun 2015</h5>
+                                            <div style="display: flex;
+                                                 align-items: center;">
+                                                <img src="{{ asset('assets/images/resume/microsoft_logo.png') }}" alt="">
+                                                <div style="padding-top: 15px;padding-left: 10px;">
+                                                    <h4 class="event-name">C# / WPF Developer intern</h4>
+                                                    <span class="event-description">Microsoft<br>&nbsp;</span>
+                                                </div>
+                                            </div>
+                                            <p style="margin-top: -15px;">Designed and developed a WPF Kinect application for in-home workouts.<br>&nbsp;</p>
+                                        </div>
+
+                                        <div class="timeline-event te-primary">
+                                            <h5 class="event-date">Dec 2017 - Feb 2018</h5>
+                                            <div style="display: flex;
+                                                 align-items: center;">
+                                                <img src="{{ asset('assets/images/resume/wizy_logo.png') }}" alt="">
+                                                <div style="padding-top: 15px;padding-left: 10px;">
+                                                    <h4 class="event-name">Android Developer Intern</h4>
+                                                    <span class="event-description">Wizy.io<br>&nbsp;</span>
+                                                </div>
+                                            </div>
+                                            <p>Contributed to the development of Entreprise Mobile Management - EMM - Android applications.<br>&nbsp;</p>
+                                        </div>
+                                    </div>
+                                    <div class=" col-sm-6 col-md-6 timeline">
+                                        <div class="timeline-event te-primary">
+                                            <h5 class="event-date">June 2014 - September 2014</h5>
+                                            <div style="display: flex;
+                                                 align-items: center;">
+                                                <img src="{{ asset('assets/images/resume/attijaribank_logo.png') }}" alt="">
+                                                <div style="padding-top: 15px;padding-left: 10px;">
+                                                    <h4 class="event-name">Java EE Developer Intern</h4>
+                                                    <span class="event-description">Attijari Bank<br>&nbsp;</span>
+                                                </div>
+                                            </div>
+                                            <p style="margin-top: -15px;">Contributed to the development of a project management web application with JEE/Spring.</p>
+                                        </div>
+                                        <div class="timeline-event te-primary">
+                                            <h5 class="event-date">Jun 2017 - Oct 2017</h5>
+                                            <div style="display: flex;
+                                                 align-items: center;">
+                                                <img src="{{ asset('assets/images/resume/aquitembico_logo.png') }}" alt="">
+                                                <div style="padding-top: 15px;padding-left: 10px;">
+                                                    <h4 class="event-name">Symfony3 Developer Intern</h4>
+                                                    <span class="event-description">AquiTemBico<br>&nbsp;</span>
+                                                </div>
+                                            </div>
+                                            <p>Developed a Symfony3 job search web application.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+                    <section class="pt-page pt-page-3" data-id="portfolio">
+                        <div class="section-title-block">
+                            <h2 class="section-title">What I've built so far</h2>
+                            <h4 class="section-description">Well I am, thriving ! Because I build what I conceive.</h4>
+                        </div>
+                        <div class="portfolio-content">
+                            <ul id="portfolio_filters" class="portfolio-filters">
+                                <li class="active">
+                                    <a class="filter btn btn-sm btn-link active" data-group="all">All</a>
+                                </li>
+                                <li>
+                                    <a class="filter btn btn-sm btn-link" data-group="android">Android apps & libraries</a>
+                                </li>
+                                <li>
+                                    <a class="filter btn btn-sm btn-link" data-group="others">Other projects</a>
+                                </li>
+                            </ul>
+                            <div id="portfolio_grid" class="portfolio-grid portfolio-masonry masonry-grid-3">
+                                <figure class="item" data-groups='["android"]'>
+                                    <a class="ajax-page-load" href="{{path('portfolio_item',{'id':  "expandit"  })}}">
+                                        <img src="{{ asset('assets/images/portfolio/expandit.jpg') }}" alt="">
+                                        <div>
+                                            <h5 class="name">Expandit</h5>
+                                            <small>Android library</small>
+                                            <i class="fa fa-video-camera"></i>
+                                        </div>
+                                    </a>
+                                </figure>
+                                <figure class="item" data-groups='["android"]'>
+                                    <a class="ajax-page-load" href="{{path('portfolio_item',{'id':  "ikotlin"  })}}">
+                                        <img src="{{ asset('assets/images/portfolio/ikotlin.jpg') }}" alt="">
+                                        <div>
+                                            <h5 class="name">iKotlin</h5>
+                                            <small>Android application</small>
+                                            <i class="fa fa-file-text-o"></i>
+                                        </div>
+                                    </a>
+                                </figure>
+                                <figure class="item" data-groups='["others"]'>
+                                    <a class="ajax-page-load" href="{{path('portfolio_item',{'id':  "kinectfitness"  })}}">
+                                        <img src="{{ asset('assets/images/portfolio/kinectfitness.png') }}" alt="">
+                                        <div>
+                                            <h5 class="name">Kinect Fitness</h5>
+                                            <small>WPF application</small>
+                                            <i class="fa fa-file-text-o"></i>
+                                        </div>
+                                    </a>
+                                </figure>
+                                <figure class="item" data-groups='["others"]'>
+                                    <a class="ajax-page-load" href="{{path('portfolio_item',{'id':  "aquitembico"  })}}">
+                                        <!--<a href="https://player.vimeo.com/video/97102654?autoplay=1" title="AquitemBico - Symfony3 project (github.com/AmalH/AquitemBicoMaringa)" class="lightbox mfp-iframe">-->
+                                        <img src="{{ asset('assets/images/portfolio/aquitembico.png') }}" alt="">
+                                        <div>
+                                            <h5 class="name">AquitemBico.com</h5>
+                                            <small>Symfony3 application</small>
+                                            <i class="fa fa-file-text-o"></i>
+                                        </div>
+                                    </a>
+                                </figure>
+                            </div>
+
+                        </div>
+                    </section>                     
+                    <section class="pt-page pt-page-4" data-id="blog">
+                        <div class="section-title-block">
+                            <h2 class="section-title">What I shared so far</h2>
+                            <h4 class="section-description" >I write tutorials and tech articles at <a target="_blank" href="http://www.pragmatictheories.tech" style="color:#f9966f;">pragmatictheories.tech</a><br>I also write poetry <a target="_blank" href="https://thequeenofsoul.tumblr.com/post/158286632357/she" style="color:#f9966f;">here</a> :) Sometimes I blend both, code, and verses ! </h4>
+                        </div>
+                        <div class="blog-masonry">
+                            <div class="item">
+                                <div class="blog-card">
+                                    <div class="media-block">
+                                        <a target="_blank" href="https://www.pragmatictheories.tech/android-implementing-two-step-authentication-through-google-authenticator/" target="_blank">
+                                            <img class="post-image img-responsive" src="{{ asset('assets/images/blog/googleAuth_post.png') }}" alt="blog-post-3" />
+                                            <div class="mask"></div>
+                                            <div class="post-date"><span class="day">3</span><span class="month">May</span><!--<span class="year">2016</span>--></div>
+                                        </a>
+                                    </div>
+                                    <div class="post-info">
+                                        <ul class="category">
+                                            <li><a target="_blank" href="https://pragmatictheories.tech/category/android/">Tutorials / Android</a></li>
+                                        </ul>
+                                        <a target="_blank" href="https://www.pragmatictheories.tech/android-implementing-two-step-authentication-through-google-authenticator/"><h4 class="blog-item-title">Android – Implementing two-step authentication through Google authenticator</h4></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="blog-card">
+                                    <div class="media-block">
+                                        <a target="_blank" href="https://www.pragmatictheories.tech/ignite-talks-why-you-should-give-it-a-go/" target="_blank">
+                                            <img class="post-image img-responsive" src="{{ asset('assets/images/blog/ignite_post.jpg') }}" alt="blog-post-1" />
+                                            <div class="mask"></div>
+                                            <div class="post-date"><span class="day">8</span><span class="month">Oct</span><!--<span class="year">2016</span>--></div>
+                                        </a>
+                                    </div>
+                                    <div class="post-info">
+                                        <ul class="category">
+                                            <li><a  target="_blank" href="https://pragmatictheories.tech/category/career-cs-students/">CAREER / CS STUDENTS</a></li>
+                                        </ul>
+                                        <a target="_blank" href="https://www.pragmatictheories.tech/ignite-talks-why-you-should-give-it-a-go/"><h4 class="blog-item-title">Ignite Talks : Why you should give it a go<br>&nbsp;</h4></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="blog-card">
+                                    <div class="media-block">
+                                        <a target="_blank" href="https://www.pragmatictheories.tech/linkedin-sdk-for-android-_-authentication/" target="_blank">
+                                            <img class="post-image img-responsive" src="{{ asset('assets/images/blog/android_linkedin_post.png') }}" alt="blog-post-6" />
+                                            <div class="mask"></div>
+                                            <div class="post-date"><span class="day">9</span><span class="month">Jan</span><!--<span class="year">2016</span>--></div>
+                                        </a>
+                                    </div>
+                                    <div class="post-info">
+                                        <ul class="category">
+                                            <li><a target="_blank" href="https://pragmatictheories.tech/category/tutorials/">Tutorials / Android</a></li>
+                                        </ul>
+                                        <a target="_blank" href="https://www.pragmatictheories.tech/linkedin-sdk-for-android-_-authentication/"><h4 class="blog-item-title">Linkedin SDK for Android _ Authentication</h4></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="blog-card">
+                                    <div class="media-block">
+                                        <a target="_blank" href="https://pragmatictheories.tech/my-experience-as-an-intern-at-a-brazilian-startup/" target="_blank">
+                                            <img class="post-image img-responsive" src="{{ asset('assets/images/blog/brazilInternship_post.png') }}" alt="blog-post-4" />
+                                            <div class="mask"></div>
+                                            <div class="post-date"><span class="day">28</span><span class="month">Aug</span><!--<span class="year">2016</span>--></div>
+                                        </a>
+                                    </div>
+                                    <div class="post-info">
+                                        <ul class="category">
+                                            <li><a  target="_blank" href="https://pragmatictheories.tech/category/career-cs-students/">ARTICLES / CAREER / CS STUDENTS</a></li>
+                                        </ul>
+                                        <a target="_blank" href="https://pragmatictheories.tech/my-experience-as-an-intern-at-a-brazilian-startup/"><h4 class="blog-item-title">My experience as an intern at a Brazilian startup</h4></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="blog-card">
+                                    <div class="media-block">   
+                                        <a target="_blank" href="https://pragmatictheories.tech/ios-oauth-integration-with-goodreads/" target="_blank">
+                                            <img class="post-image img-responsive" src="{{ asset('assets/images/blog/ios_post.png') }}" alt="blog-post-2" />
+                                            <div class="mask"></div>
+                                            <div class="post-date"><span class="day">22</span><span class="month">May</span><!--<span class="year">2016</span>--></div>
+                                        </a>
+                                    </div>
+                                    <div class="post-info">
+                                        <ul class="category">
+                                            <li><a target="_blank" href="https://pragmatictheories.tech/category/ios/">Tutorials / iOS</a></li>
+                                        </ul>
+                                        <a  target="_blank" href="https://pragmatictheories.tech/ios-oauth-integration-with-goodreads/"><h4 class="blog-item-title">iOS – OAuth integration with Goodreads</h4></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="blog-card">
+                                    <div class="media-block">   
+                                        <a target="_blank" href="https://pragmatictheories.tech/engineering-degrees-or-engineering/" target="_blank">
+                                            <img class="post-image img-responsive" src="{{ asset('assets/images/blog/degreesPost.png') }}" alt="blog-post-2" />
+                                            <div class="mask"></div>
+                                            <div class="post-date"><span class="day">20</span><span class="month">Jan</span><!--<span class="year">2016</span>--></div>
+                                        </a>
+                                    </div>
+                                    <div class="post-info">
+                                        <ul class="category">
+                                            <li><a target="_blank" href="https://pragmatictheories.tech/category/career-cs-students/">ARTICLES / CAREER / CS STUDENTS</a></li>
+                                        </ul>
+                                        <a target="_blank"  href="https://pragmatictheories.tech/engineering-degrees-or-engineering/"><h4 class="blog-item-title">Engineering degrees or engineering ?</h4></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="blog-card">
+                                    <div class="media-block">   
+                                        <a target="_blank" href="https://www.pragmatictheories.tech/enactus-journey/" target="_blank">
+                                            <img class="post-image img-responsive" src="{{ asset('assets/images/blog/enactus_post.jpg') }}" alt="blog-post-2" />
+                                            <div class="mask"></div>
+                                            <div class="post-date"><span class="day">8</span><span class="month">Nov</span><!--<span class="year">2016</span>--></div>
+                                        </a>
+                                    </div>
+                                    <div class="post-info">
+                                        <ul class="category">
+                                            <li><a target="_blank" href="https://pragmatictheories.tech/category/career-cs-students/">Articles / Students life</a></li>
+                                        </ul>
+                                        <a target="_blank"  href="https://www.pragmatictheories.tech/enactus-journey/"><h4 class="blog-item-title">First steps of my Enactus journey</h4></a>
+                                    </div>
+                                </div>
+                            </div>    
+                            <div class="item">
+                                <div class="blog-card">
+                                    <div class="media-block">
+                                        <a target="_blank" href="https://www.pragmatictheories.tech/android-firebase-realtime-database-basic-cruds/" target="_blank">
+                                            <img class="post-image img-responsive" src="{{ asset('assets/images/blog/firebase_post.jpg') }}" alt="blog-post-4" />
+                                            <div class="mask"></div>
+                                            <div class="post-date"><span class="day">11</span><span class="month">Feb</span><!--<span class="year">2016</span>--></div>
+                                        </a>
+                                    </div>
+                                    <div class="post-info">
+                                        <ul class="category">
+                                            <li><a target="_blank" target="_blank" href="https://pragmatictheories.tech/category/android/">Tutorials / Android</a></li>
+                                        </ul>
+                                        <a target="_blank" href="https://www.pragmatictheories.tech/android-firebase-realtime-database-basic-cruds/"><h4 class="blog-item-title">Android – Firebase realtime database: Basic cruds</h4></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="blog-card">
+                                    <div class="media-block">   
+                                        <a target="_blank" href="https://pragmatictheories.tech/passing-microsoft-exam-70-481-programming-in-c/" target="_blank">
+                                            <img class="post-image img-responsive" src="{{ asset('assets/images/blog/csharp_certification_post.png') }}" alt="blog-post-2" />
+                                            <div class="mask"></div>
+                                            <div class="post-date"><span class="day">20</span><span class="month">Jan</span><!--<span class="year">2016</span>--></div>
+                                        </a>
+                                    </div>
+                                    <div class="post-info">
+                                        <ul class="category">
+                                            <li><a target="_blank" href="https://pragmatictheories.tech/category/career-cs-students/">ARTICLES / CAREER / CS STUDENTS</a></li>
+                                        </ul>
+                                        <a target="_blank"  href="https://pragmatictheories.tech/passing-microsoft-exam-70-481-programming-in-c/"><h4 class="blog-item-title">Passing microsoft exam 70-483: Programming in c#</h4></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="blog-card">
+                                    <div class="media-block">   
+                                        <a target="_blank" href="https://pragmatictheories.tech/iot-application-with-intel-galileo-android-and-node-js/" target="_blank">
+                                            <img class="post-image img-responsive" src="{{ asset('assets/images/blog/iotPost.png') }}" alt="blog-post-2" />
+                                            <div class="mask"></div>
+                                            <div class="post-date"><span class="day">31</span><span class="month">Jan</span></div>
+                                        </a>
+                                    </div>
+                                    <div class="post-info">
+                                        <ul class="category">
+                                            <li><a target="_blank" href="https://pragmatictheories.tech/category/tutorials/">IOT / TUTORIALS</a></li>
+                                        </ul>
+                                        <a target="_blank"  href="https://pragmatictheories.tech/iot-application-with-intel-galileo-android-and-node-js/"><h4 class="blog-item-title">Simple IoT application with Intel Galileo, Node Js and Android</h4></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+                    <section class="pt-page pt-page-5" data-id="contact">
+                        <div class="section-title-block">
+                            <h2 class="section-title">Hire me ?</h2>
+                            <h4 class="section-description" >It will make your life easier . . . </h4>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 col-md-6 subpage-block">
+                                <p style="text-align: justify">I help you build, improve, or extend applications.<br> You help me make the world better.<br>And we will rock . . !</p>
+                                <p style="text-align: justify">One kind of a deal isn't it ?</p>
+                                <p style="text-align: justify"><br>Contact me through the following, I am open-minded enough to talk about absolutely anything !</p>
+                                <div class="contact-info-block">
+                                    <div class="ci-icon">
+                                        <i class="pe-7s-icon pe-7s-mail"></i>
+                                    </div>
+                                    <div class="ci-text">
+                                        <h5>hichri.amal@hotmail.fr</h5>
+                                    </div>
+                                </div>
+                                <div class="contact-info-block">
+                                    <div class="ci-icon">
+                                        <i class="pe-7s-icon pe-7s-call"></i>
+                                    </div>
+                                    <div class="ci-text">
+                                        <h5>+216 54 821 200</h5>
+                                    </div>
+                                </div>
+                                <div class="contact-info-block">
+                                    <ul class="social list-inline">
+                                        <li><a target="_blank" href="https://www.facebook.com/amalhichri"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                        <li><a target="_blank" href="https://www.instagram.com/amalhichrii/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                        <li><a target="_blank" href="https://twitter.com/AmalHichrii"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                        <li><a target="_blank" href="https://plus.google.com/+AmalHICHRI"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 subpage-block">
+                                <div class="block-title">
+                                    <h3>Ping me</h3>
+                                </div>
+                                <form id="contact-form" method="post">
+                                    <div class="messages"></div>
+
+                                    <div class="controls">
+                                        <div class="form-group">
+                                            <input id="form_name" type="text" name="name" class="form-control" placeholder="Full Name" required="required" data-error="Name is required.">
+                                            <div class="form-control-border"></div>
+                                            <i class="form-control-icon fa fa-user"></i>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input id="form_email" type="email" name="email" class="form-control" placeholder="Email Address" required="required" data-error="Valid email is required.">
+                                            <div class="form-control-border"></div>
+                                            <i class="form-control-icon fa fa-envelope"></i>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <textarea id="form_message" name="message" class="form-control" placeholder="Message for me" rows="4" required="required" data-error="Please, leave me a message."></textarea>
+                                            <div class="form-control-border"></div>
+                                            <i class="form-control-icon fa fa-comment"></i>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                        <div class="g-recaptcha" data-sitekey="6LdqmCAUAAAAAMMNEZvn6g4W5e0or2sZmAVpxVqI" data-callback="correctCaptcha"></div>
+                                        <!--<a class="button" href="{{path('portfolio_contactform',{'data':  "aquitembico"  })}}">Send message</a>-->
+                                        <input type="submit" class="button btn-send" value="Ping" >
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %} 
+
+
+
+
+
+

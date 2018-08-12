@@ -1,0 +1,14 @@
+portfolio_aboutme:
+    path:     /
+    defaults: { _controller: PortfolioBundle:PortfolioMain:index }
+portfolio_item:
+    path:     /project/{id}
+    defaults: { _controller: PortfolioBundle:PortfolioMain:portfolioitem }
+portfolio_cv:
+    path:     /Amal HICHRI _Software_development_engineer.pdf
+    defaults: { _controller: PortfolioBundle:PortfolioMain:download }
+    
+portfolio_contactform:
+    path:     /contactme/{data}
+    defaults: { _controller: PortfolioBundle:PortfolioMain:contact }
+    

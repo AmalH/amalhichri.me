@@ -1,0 +1,57 @@
+<div id="portfolio-page" class="portfolio-page-content">
+    <div class="container">
+        <div class="portfolio-nav">
+            <div id="portfolio-close-button" class="portfolio-close-button">
+                <a href="#portfolio"><i class="fa fa-close"></i></a>
+            </div>
+        </div>
+
+        <div class="portfolio-title">
+            <h1>Expandit</h1>
+        </div>
+        <div class="row">
+            <div class="col-sm-7 col-md-7 portfolio-block">
+                <div class="portfolio-page-video embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2GJ8uRUC3uw" frameborder="0" allow="autoplay; encrypted-media"></iframe>
+                </div>
+                <script type="text/javascript">
+                    jQuery(document).ready(function($){
+                        $('.portfolio-page-carousel').owlCarousel({
+                            smartSpeed:1200,
+                            items: 1,
+                            loop: true,
+                            dots: true,
+                            nav: true,
+                            navText: false,
+                            margin: 10
+                        });
+                    }); 
+                </script>
+            </div>
+
+            <div class="col-sm-5 col-md-5 portfolio-block">
+                <div class="block-title">
+                    <h3>Description</h3>
+                </div>
+                <ul class="project-general-info">
+                    <li><p><i class="fa fa-git"></i> <a href="https://github.com/AmalH/expandit" target="_blank">github.com/AmalH/expandit</a></p></li>
+                    <li><p><i class="fa fa-calendar"></i> May 2018</p></li>
+                </ul>
+
+                <p class="text-justify">Expandit is a customizable expandable listview library for Android. <strong>I published this component as a library</strong> after creating it for <a href="http://localhost/MyWebsite/web/#portfolio//MyWebsite/web/project/ik" target="_blank">an Android app I was working on</a>. This work helped me write <a href="https://pragmatictheories.tech/android-libraries-and-how-to-distribute-one-to-jcenter-or-mavencentral/" target="_blank" >a tutorial on distributing android libraries to jCenter or mavenCentral </a>. <br>The github repo's readme contains a detailed description on how to use the library. </p>
+                <div class="tags-block">
+                    <div class="block-title">
+                        <h3>Technologies & Tools</h3>
+                    </div>
+                    <ul class="tags">
+                        <li><a>Java</a></li>
+                        <li><a>Gradle</a></li>
+                        <li><a>Sonatype OSSRH</a></li>
+                        <li><a>Android studio</a></li>
+                        <li><a>Github</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
